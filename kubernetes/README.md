@@ -2,9 +2,9 @@
 
 ## Motivação
 
-Kubernetes atualmente é a principal ferramenta de orquestração e _deployment_ de _containers_ utilizado no mundo, práticamente tornando-se um padrão para abstração de recursos de infraestrutura. 
+Kubernetes atualmente é a principal ferramenta de orquestração e _deployment_ de _containers_ utilizado no mundo, práticamente tornando-se um padrão para abstração de recursos de infraestrutura.
 
-Na IDWall todos nossos serviços são containerizados e distribuídos em _clusters_ para cada ambiente, sendo assim é importante que as aplicações sejam adaptáveis para cada ambiente e haja controle via código dos recursos kubernetes através de seus manifestos. 
+Na IDWall todos nossos serviços são containerizados e distribuídos em _clusters_ para cada ambiente, sendo assim é importante que as aplicações sejam adaptáveis para cada ambiente e haja controle via código dos recursos kubernetes através de seus manifestos.
 
 ## Objetivo
 Dentro deste repositório existe um subdiretório **app** e um **Dockerfile** que constrói essa imagem, seu objetivo é:
@@ -17,7 +17,7 @@ Dentro deste repositório existe um subdiretório **app** e um **Dockerfile** qu
 - A aplicação deve responder à uma URL específica configurada no _ingress_
 
 
-## Extras 
+## Extras
 - Utilizar Helm [HELM](https://helm.sh)
 - Divisão de recursos por _namespaces_
 - Utilização de _health check_ na aplicação
@@ -30,3 +30,7 @@ Dentro deste repositório existe um subdiretório **app** e um **Dockerfile** qu
 * A aplicação sobe por _default_ utilizando a porta **3000** e utiliza uma variável de ambiente **$NAME**
 
 * Não é necessário realizar o _upload_ da imagem Docker para um registro público, você pode construir a imagem localmente e utilizá-la diretamente.
+
+## Como executar
+
+* sh init.sh
